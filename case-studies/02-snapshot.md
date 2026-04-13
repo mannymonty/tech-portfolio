@@ -1,6 +1,9 @@
 # Snapshot
 *Gamified Personal Finance App with AI Coaching*
 
+## Live product
+[takesnapshot.com](https://takesnapshot.com) — production web app, fully functional
+
 ## The Problem
 Every personal finance app assumes the hard part is getting data (bank sync, transaction imports). The real problem is getting people to care about the data they already have. People avoid their finances, lose motivation, and never build the habit of checking in.
 
