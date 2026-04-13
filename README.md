@@ -1,4 +1,4 @@
-# Manny MV — Product Marketing Portfolio
+# Mannymv — Portfolio
 
 I'm a builder who operates at the intersection of data, product, and customer insight. This repository showcases projects I've designed and shipped — from enterprise analytics platforms to consumer fintech apps to internal automation tools. What ties them together: I find where people are stuck, build the thing that unsticks them, and make sure the output tells a clear story.
 
