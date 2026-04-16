@@ -71,4 +71,4 @@ This repo covers seven projects across enterprise analytics, consumer fintech, p
 
 Product-minded builder with deep technical fluency. I've spent the last few years building data platforms, automation tools, and consumer products — always with the end user and the business narrative in mind. Pursuing Product Marketing because it's the role that matches how I already think: understand the customer, understand the product, bridge the gap.
 
-📧 mannymv@amazon.com · [app.takesnapshot.com](https://app.takesnapshot.com)
+📧 [app.takesnapshot.com](https://app.takesnapshot.com)
