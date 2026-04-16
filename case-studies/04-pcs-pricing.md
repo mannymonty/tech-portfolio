@@ -22,8 +22,7 @@ Python 3.13, Jupyter, pandas, openpyxl, ipywidgets, CSV/Excel I/O
 - **Cross-functional collaboration**: Outputs designed for handoff to pricing, finance, and regional ops teams
 - **Customer empathy**: Interactive UI so business users pick regions from dropdowns instead of writing code
 
-## Key Visuals
-> Add screenshots to `../visuals/pcs/`
+## Key Visuals (`../visuals/pcs/`)
 
 - Jupyter widget UI (dropdowns, multi-select, "Calculate" button)
 - HTML output table with gold headers, green/red delta coloring, ★-marked estimates

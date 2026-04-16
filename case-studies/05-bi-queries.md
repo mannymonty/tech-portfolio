@@ -26,8 +26,7 @@ Python 3.13, pandas, psycopg2, openpyxl, matplotlib, numpy, tqdm, python-dotenv,
 - **Cross-functional collaboration**: Serves finance, product, and customer analytics teams with different cadences and consumption patterns
 - **Iterative evolution**: 7+ archived iterations from single-query CSV exports to the current platform
 
-## Key Visuals
-> Add screenshots to `../visuals/bi-queries/`
+## Key Visuals (`../visuals/bi-queries/`)
 
 - Terminal output during a batch run (progress logging, timing, row counts)
 - `runFolders.txt` config file showing the declarative architecture

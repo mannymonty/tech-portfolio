@@ -47,13 +47,12 @@ I built the customer intelligence engine behind the weekly executive review for 
 
 ### Code Samples (`../samples/service-analytics/`)
 
-**1. `commentary_generator_pattern.py`** — Sanitized excerpt showing the commentary generation architecture. Demonstrates how raw cohort data gets transformed into narrative paragraphs with YoY attribution, sub-product decomposition, and cohort-level drivers. All real numbers replaced with generic examples.
+**`commentary_generator_pattern.py`** — Sanitized excerpt showing the commentary generation architecture. Demonstrates how raw cohort data gets transformed into narrative paragraphs with YoY attribution, sub-product decomposition, and cohort-level drivers.
 
-**2. `cache_engine_pattern.py`** — The SQL caching architecture (run → parquet → freshness check). Fully generic, no proprietary data.
+**`cache_engine_pattern.py`** — The SQL caching architecture (run → parquet → freshness check). Shows the pattern that cuts query iteration time from minutes to seconds during weekly reporting cycles.
 
-### Architecture Diagrams (`../visuals/service-analytics/`)
+### Architecture (`../visuals/service-analytics/`)
 
-**3. Architecture diagram** — Create using draw.io or similar:
 ```
 Redshift (5 clusters) ──→ 80+ SQL Queries (parallel) ──→ Parquet Cache
                                                               ↓
@@ -74,21 +73,5 @@ Six Blockers Excel ──→ Python Loader ──→ Structured DataFrames
                           • Executive summary
 ```
 
-**4. Notebook structure screenshot** — Open `EKS_CustomerAnalytics_Weekly.ipynb`, collapse all code cells, screenshot the 13 section headers. Shows analytical depth without exposing data.
-
-**5. Visualization mockups** — Recreate with fake data:
-- CWGR trajectory heatmap (customers × time horizons, red-yellow-green)
-- Health quadrant scatter (WoW $ vs YoY %, bubble size = revenue)
-- Revenue Pareto bar chart with cumulative % line
-- Cohort stacked area chart (6 tiers over time)
-- Momentum donut chart (Accelerating/Recovering/Decelerating/Declining)
-
-**6. Commentary output mockup** — Fake-data example:
+### Commentary Output Example
 > "The strong YoY growth (+18.2%) is mainly attributed to 1/ growing adoption of Product Alpha by top 1-10 and 11-100 customer cohorts driving +$X.XM revenue increase YoY and 2/ growth in Product Beta revenue (+12.1% YoY) with momentum in the 1-10 (+22.3% YoY), 11-100 (+15.1% YoY) cohorts, partially offset by softness in 101-1000 (-3.2%)."
-
-### What NOT to Include
-- ❌ No real revenue numbers, customer names, or internal endpoints
-- ❌ No SQL referencing internal schemas/tables
-- ❌ No credentials, connection strings, or cluster hostnames
-- ❌ No screenshots of actual notebook output cells with real data
-- ❌ No Six Blockers Excel file

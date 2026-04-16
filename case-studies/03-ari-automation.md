@@ -25,8 +25,7 @@ Python 3.13, pandas, openpyxl, PySimpleGUI, PyInstaller (.exe packaging), tqdm
 - **Data storytelling**: Automated summary reports and Excel templates that generate ready-to-send stakeholder narratives
 - **Root cause analysis**: Traced a 20x data volume anomaly to a misconfigured dashboard filter — knowing when the problem isn't your product
 
-## Key Visuals
-> Add screenshots to `../visuals/ari/`
+## Key Visuals (`../visuals/ari/`)
 
 - GUI application screenshot (file browser, progress bar, live log)
 - Before/after workflow diagram (hours → 2 minutes)
