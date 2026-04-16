@@ -16,7 +16,7 @@ This repo covers seven projects across enterprise analytics, consumer fintech, p
 | [ARI Invoice Automation](./case-studies/03-ari-automation.md) | Process Automation | Reduced multi-hour monthly Excel workflow to < 2 minutes; iterated to a packaged desktop app across 5 versions |
 | [PCS Region Cost Analyzer](./case-studies/04-pcs-pricing.md) | Pricing Intelligence | Turned a weeks-long manual process into a same-day workflow across 114 regions and 1.15M+ pricing records |
 | [BI Queries Automation](./case-studies/05-bi-queries.md) | Operational Platform | Cut weekly WBR production from 6 hours to 25 minutes (93%); adopted by multiple teams across the org |
-| [FinAI Adoption Videos](./case-studies/06-finai-adoption.md) | Enablement & Evangelism | Produced AI adoption video series for Finance org — PMM playbook applied to an internal product launch |
+| [FinAI Adoption Videos](./case-studies/06-finai-adoption.md) | Enablement & Evangelism | Produced AI adoption video series for Finance org — identified the gap, created the content, drove usage |
 | [Clickr](./case-studies/07-clickr.md) | UX Research Tool | Real-time collaborative tagging app for live research sessions — Firebase-backed, transcript-aligned, export-ready |
 
 ---
@@ -40,9 +40,9 @@ This repo covers seven projects across enterprise analytics, consumer fintech, p
 ## Repository Structure
 
 ```
-├── README.md                    ← You are here
+├── README.md
 ├── case-studies/                ← Detailed write-ups for each project
-│   ├── 00-ai-ml-perspective.md  ← AI/ML architecture POV + reference architectures
+│   ├── 00-ai-ml-perspective.md  ← AI/ML architecture POV
 │   ├── 01-service-analytics.md
 │   ├── 02-snapshot.md
 │   ├── 03-ari-automation.md

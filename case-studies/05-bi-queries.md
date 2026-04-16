@@ -37,4 +37,4 @@ Python 3.13, pandas, psycopg2, openpyxl, matplotlib, numpy, tqdm, python-dotenv,
 - Archive folder showing the 7-iteration evolution
 
 ## Portfolio Angle
-I inherited a 6-hour weekly reporting process and turned it into a 25-minute automated pipeline. But the real story is what happened next: I built it as a config-driven platform, and other teams across the org started using it for their own reporting — replacing manual DataGrip sessions with a single command. That's internal product-market fit. I didn't just solve my team's problem; I built infrastructure that scaled.
+I inherited a 6-hour weekly reporting process and turned it into a 25-minute automated pipeline. But the real story is what happened next: I built it as a config-driven platform, and other teams across the org started using it for their own reporting — replacing manual DataGrip sessions with a single command. I didn't just solve my team's problem; I built infrastructure that scaled.

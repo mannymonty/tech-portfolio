@@ -31,7 +31,7 @@ Next.js 14, React 18, React Native/Expo, TypeScript, Tailwind CSS, PostgreSQL (S
 ## Explainer Video (`../visuals/snapshot/snapshot-sales.mp4`)
 A product explainer video produced with [Remotion](https://www.remotion.dev/) — a React framework for programmatic video. The video was built directly from the Snapshot codebase, meaning every animation, transition, and data visualization is driven by code rather than assembled in a traditional video editor. This is the same approach used for data-driven marketing content at scale.
 
-This demonstrates the full PMM content loop: understand the product → define the narrative → produce the asset → ship it.
+This demonstrates the full content production loop: understand the product → define the narrative → produce the asset → ship it.
 
 ## Key Visuals (`../visuals/snapshot/`)
 - `snapshot-sales.mp4` — Remotion explainer video (see above)
