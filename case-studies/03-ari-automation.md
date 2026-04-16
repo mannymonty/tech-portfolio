@@ -18,8 +18,8 @@ Also built: automated stakeholder email templates, Excel formula-driven narrativ
 ## Tech Stack
 Python 3.13, pandas, openpyxl, PySimpleGUI, PyInstaller (.exe packaging), tqdm
 
-## PMM Skills Demonstrated
-- **Customer empathy**: Each version was a direct response to real user friction — textbook iterative product development
+## What This Shows
+- **Customer empathy**: Each version was a direct response to real user friction — iterative product development driven by actual feedback
 - **Product sense**: Same engine, multiple interfaces for different user contexts (power user CLI vs. non-technical GUI)
 - **Process optimization**: Multi-hour manual workflow → < 2-minute automated pipeline
 - **Data storytelling**: Automated summary reports and Excel templates that generate ready-to-send stakeholder narratives

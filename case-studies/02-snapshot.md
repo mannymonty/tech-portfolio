@@ -19,10 +19,10 @@ A full-stack personal finance companion — web app (Next.js, 27 pages) + mobile
 ## Tech Stack
 Next.js 14, React 18, React Native/Expo, TypeScript, Tailwind CSS, PostgreSQL (Supabase), Prisma ORM (38 models), Anthropic Claude, Clerk Auth, Recharts, Framer Motion, Vercel, EAS Build, Vitest + fast-check
 
-## PMM Skills Demonstrated
+## What This Shows
 - **Product sense**: Identified a gap no one was filling — the check-in itself as the core product, not the data sync
 - **Customer empathy**: Built to solve my own problem first, then designed for the user who avoids their finances — not the one who's already engaged
-- **GTM strategy**: Tiered pricing (Free/Pro/Elite), competitive positioning against 6 competitors, community-driven growth thesis
+- **GTM thinking**: Tiered pricing (Free/Pro/Elite), competitive positioning against 6 competitors, community-driven growth thesis
 - **Messaging & positioning**: Elevator pitches at 10s/30s/2min, objection-handling scripts, "manual entry is a feature" reframe
 - **Competitive analysis**: Documented positioning against Mint, YNAB, Monarch, Copilot, Habitica, Credit Karma
 - **Technical execution**: 38-model Prisma schema, Claude AI integration at $0.01/call with DB caching, dual-client architecture (web + mobile) on a shared backend

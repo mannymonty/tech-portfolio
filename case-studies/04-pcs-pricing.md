@@ -15,7 +15,7 @@ Interactive widget-based UI (dropdowns, multi-select, search-and-add) so non-tec
 ## Tech Stack
 Python 3.13, Jupyter, pandas, openpyxl, ipywidgets, CSV/Excel I/O
 
-## PMM Skills Demonstrated
+## What This Shows
 - **GTM thinking**: Availability matrix directly supports go-to-market expansion decisions
 - **Data storytelling**: 1.15M raw pricing records → visual availability heatmap and color-coded cost comparisons
 - **Product sense**: Real bottleneck wasn't "we need data" but "we need to estimate and fill gaps systematically"

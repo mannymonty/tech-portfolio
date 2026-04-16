@@ -25,12 +25,12 @@ A lightweight, real-time collaborative tagging app built for live research sessi
 ## Tech Stack
 React 18, Vite, Firebase (Firestore real-time), Tailwind CSS, JavaScript (ES2023)
 
-## PMM Skills Demonstrated
+## What This Shows
 - **Product sense**: Identified the exact moment in the research workflow where value is lost (real-time tagging with no good tool) and built the minimum viable solution that solves it without adding friction
 - **Customer empathy**: Designed for the moderator's context — running a live call, can't context-switch. Keyboard shortcuts, one-click tagging, pause support, and a clean mobile-friendly UI reflect deep understanding of the use case
 - **Systems thinking**: Real-time sync architecture (Firestore subscriptions + presence heartbeat), auto-alignment algorithm for transcript matching, multi-role session model (host vs. observer)
 - **Data storytelling**: The export layer turns raw click data into a structured research artifact — HTML report with tag breakdown, per-person attribution, and transcript context inline
-- **Iterative product design**: Feature set reflects real research team needs: multi-participant support, mid-session button creation, undo, pause, emoji reactions — each one solving a specific friction point
+- **Iterative design**: Feature set reflects real research team needs: multi-participant support, mid-session button creation, undo, pause, emoji reactions — each one solving a specific friction point
 
 ## Portfolio Angle
 Clickr is a tool I built in under a week because the research workflow had a gap nobody had cleanly solved: real-time, multi-person tagging during a live call, with post-session transcript alignment. I designed the full session model (host/observer roles, 6-char join codes, heartbeat-based presence), built the real-time sync layer on Firebase Firestore, and shipped a transcript matching algorithm that auto-aligns click timestamps to transcript lines with adjustable offset. The export layer produces a shareable research artifact — HTML report with tag breakdown, per-person attribution, and transcript context inline. It's live, it works, and it's ready to use. This is what I do: see a workflow gap, design the solution, ship it.

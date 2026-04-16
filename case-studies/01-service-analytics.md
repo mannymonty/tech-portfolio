@@ -31,10 +31,10 @@ Python scripts and a dedicated notebook that transform the analytical output int
 ## Tech Stack
 Python, pandas, NumPy, Matplotlib, psycopg2 (Redshift), Jupyter, SQL (80+ queries across 5 Redshift clusters), ThreadPoolExecutor (parallel query execution), Parquet caching, openpyxl, holidays (actualization logic), automated email delivery
 
-## PMM Skills Demonstrated
+## What This Shows
 - **Customer intelligence at scale**: Not just "who are our top customers" but "what's their momentum, where are they in their growth trajectory, what's driving their spend, and what's the risk signal" — across 7 product dimensions simultaneously
 - **Data storytelling**: Every analytical layer produces narrative output. The commentary generator, the executive summary, the per-customer deep-dives — all designed to be consumed by non-technical stakeholders
-- **Segmentation thinking**: 6-tier cohort framework, product-level decomposition (Core vs. GenAI vs. Auto Mode vs. Extended Support), pricing model mix analysis — this is how PMMs think about customer tiers and messaging
+- **Segmentation thinking**: 6-tier cohort framework, product-level decomposition (Core vs. GenAI vs. Auto Mode vs. Extended Support), pricing model mix analysis
 - **Executive communication**: Health quadrant scatter plots, CWGR heatmaps, Pareto charts, momentum donut charts — visual language designed for VP/SVP audiences
 - **Systems thinking**: Parallel query execution, Parquet caching with freshness checks, actualization logic (WD7 business day calculation), fallback data sources for missing customers, validation framework cross-checking SQL output against Excel source of truth
 

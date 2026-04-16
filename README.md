@@ -10,7 +10,7 @@ This repo covers seven projects across enterprise analytics, consumer fintech, p
 
 | Project | Type | Impact |
 |---------|------|--------|
-| [AI & ML Architecture Perspective](./case-studies/00-ai-ml-perspective.md) | Technical POV | How I think about LLM inference, MLOps, and the SageMaker/Bedrock stack — with reference architectures |
+| [AI & ML Architecture Perspective](./case-studies/00-ai-ml-perspective.md) | Technical POV | How I think about AI/ML systems — what I've built, patterns I've observed, and where my gaps are |
 | [C&S Service Analytics Platform](./case-studies/01-service-analytics.md) | Enterprise Analytics | Cut WBR prep from 4–6 hours to 25–30 min; auto-generates executive commentary across 3 cloud services |
 | [Snapshot](./case-studies/02-snapshot.md) | Consumer Fintech App | Full-stack web + mobile app with AI coaching, gamification, and full GTM strategy — includes Remotion explainer video |
 | [ARI Invoice Automation](./case-studies/03-ari-automation.md) | Process Automation | Reduced multi-hour monthly Excel workflow to < 2 minutes; iterated to a packaged desktop app across 5 versions |
@@ -25,7 +25,7 @@ This repo covers seven projects across enterprise analytics, consumer fintech, p
 
 | Competency | Where It Shows Up |
 |------------|-------------------|
-| AI/ML Architecture | Snapshot (Claude inference pipeline, prompt engineering, cost optimization), Service Analytics (LLM-generated narrative from structured data), FinAI (AI adoption enablement) |
+| AI/ML Integration | Snapshot (Claude inference pipeline, prompt engineering, cost optimization), Service Analytics (auto-generated narrative from structured data), FinAI (AI adoption enablement) |
 | Data Storytelling | Service Analytics, BI Queries, PCS Pricing |
 | Product Sense | Snapshot, ARI (5-version iteration), Clickr (workflow-first design), PCS (gap estimation insight) |
 | GTM Strategy | Snapshot (pricing, positioning, competitive analysis), PCS (region expansion) |

@@ -18,9 +18,9 @@ Running in production weekly for 6+ months (117 logged runs). Adopted by other t
 ## Tech Stack
 Python 3.13, pandas, psycopg2, openpyxl, matplotlib, numpy, tqdm, python-dotenv, Win32 COM / Outlook API, PowerShell (Task Scheduler), Amazon Redshift Serverless (5 clusters)
 
-## PMM Skills Demonstrated
+## What This Shows
 - **Operational excellence**: 6 hours → 25 minutes (93% reduction), freeing the team for actual analysis
-- **Platform thinking**: Config-driven architecture that other teams adopted — internal product-market fit
+- **Platform thinking**: Config-driven architecture that other teams adopted without code changes
 - **Customer empathy**: Interactive runner with email preview, WorkDocs fallback, notebook templates with cheat sheets
 - **Data storytelling**: 80+ SQL queries structured as narratives — cohort segmentation, WoW/YoY analysis, GenAI breakdowns
 - **Cross-functional collaboration**: Serves finance, product, and customer analytics teams with different cadences and consumption patterns
