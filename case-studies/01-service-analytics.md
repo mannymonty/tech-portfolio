@@ -2,7 +2,7 @@
 *Enterprise Customer Analytics, Revenue Intelligence & Executive Reporting*
 
 ## The Problem
-A portfolio of cloud container services (EKS, ECS/Fargate, ECR, Lambda) generates hundreds of millions in weekly revenue across thousands of customers. Leadership needs a clear, weekly picture: what moved, why, who's driving it, and what's the trajectory. The existing process was manual, slow, and produced static spreadsheets that couldn't answer follow-up questions.
+A portfolio of cloud container services (EKS, ECS/Fargate, ECR, Lambda) generates hundreds of millions in weekly revenue across thousands of customers. Leadership needs a clear, weekly picture: what moved, why, who's driving it, and what's the trajectory. The existing process was manual, slow, and produced static spreadsheets that couldn't answer follow-up questions — WBR prep consumed 4–6 hours every Monday before anyone could start actual analysis.
 
 ## What I Built
 A comprehensive analytics platform with three layers, each building on the last:
@@ -39,7 +39,7 @@ Python, pandas, NumPy, Matplotlib, psycopg2 (Redshift), Jupyter, SQL (80+ querie
 - **Systems thinking**: Parallel query execution, Parquet caching with freshness checks, actualization logic (WD7 business day calculation), fallback data sources for missing customers, validation framework cross-checking SQL output against Excel source of truth
 
 ## Portfolio Angle
-I built the customer intelligence engine behind the weekly executive review for a multi-billion-dollar cloud services portfolio. The platform doesn't just query data — it classifies customer momentum, decomposes revenue drivers across product dimensions, tracks cohort migration, and generates the narrative. Each service (EKS, ECS/Fargate, ECR) has its own 13-section analytical workbook with health quadrant analysis, CWGR trajectory heatmaps, Pareto concentration charts, and auto-generated commentary. The WBR dashboard layer reconciles gross-to-net revenue across data sources, and the commentary engine produces paragraphs you paste directly into the executive deck. This is the kind of customer analytics that PMMs use to inform positioning, identify expansion opportunities, and build competitive intelligence — I just built the system that produces it.
+I built the customer intelligence engine behind the weekly executive review for a multi-billion-dollar cloud services portfolio. What used to take 4–6 hours of manual work every Monday now runs in 25–30 minutes — freeing the team to spend Monday morning on analysis instead of data wrangling. The platform doesn't just query data — it classifies customer momentum, decomposes revenue drivers across product dimensions, tracks cohort migration, and generates the narrative. Each service (EKS, ECS/Fargate, ECR) has its own 13-section analytical workbook with health quadrant analysis, CWGR trajectory heatmaps, Pareto concentration charts, and auto-generated commentary. The WBR dashboard layer reconciles gross-to-net revenue across data sources, and the commentary engine produces paragraphs you paste directly into the executive deck. This is the kind of customer analytics that PMMs use to inform positioning, identify expansion opportunities, and build competitive intelligence — I just built the system that produces it.
 
 ---
 

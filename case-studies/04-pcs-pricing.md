@@ -2,7 +2,7 @@
 *Pricing Intelligence for Global Expansion*
 
 ## The Problem
-Cloud services aren't priced uniformly across 114 global regions, and many regions lack published pricing entirely. The team needed to know: which regions are ready for service launch, and what should pricing look like where it doesn't exist yet? The manual process took weeks.
+Cloud services aren't priced uniformly across 114 global regions, and many regions lack published pricing entirely. The team needed to know: which regions are ready for service launch, and what should pricing look like where it doesn't exist yet? The manual process — pulling pricing data, cross-referencing availability, estimating gaps — took weeks and required someone technical to run it each time.
 
 ## What I Built
 A pricing intelligence toolkit with two components:
@@ -32,4 +32,4 @@ Python 3.13, Jupyter, pandas, openpyxl, ipywidgets, CSV/Excel I/O
 - Before/after: raw 1.15M-row CSV vs. clean actionable summary
 
 ## Portfolio Angle
-When the team needed to expand cloud services into new regions, I built a pricing intelligence toolkit that ingests 1.15M+ cost records, audits availability across 114 regions, and estimates missing pricing using a statistical anchor-delta methodology. The interactive UI let non-technical stakeholders run their own analyses. The tool directly informed go-to-market prioritization — turning a weeks-long manual process into a same-day workflow.
+When the team needed to expand cloud services into new regions, I built a pricing intelligence toolkit that ingests 1.15M+ cost records, audits availability across 114 regions, and estimates missing pricing using a statistical anchor-delta methodology. The interactive widget UI meant non-technical stakeholders — pricing, finance, regional ops — could run their own analyses without writing a line of code. A process that previously took weeks of manual work became a same-day self-serve workflow. The outputs were formatted for direct import into the pricing system, removing the last manual handoff step.

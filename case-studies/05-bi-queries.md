@@ -2,7 +2,7 @@
 *WBR Production Pipeline & Cross-Team Reporting Infrastructure*
 
 ## The Problem
-Every Monday, the extended team started early to produce the Weekly Business Review. The process: manually run 80+ SQL queries one-by-one across multiple Redshift clusters, copy results into an extremely heavy Excel workbook, format everything, and email it out. ~6 hours every week. It was the team's biggest recurring time sink.
+Every Monday, the extended team started early to produce the Weekly Business Review. The process: manually run 80+ SQL queries one-by-one across multiple Redshift clusters, copy results into an extremely heavy Excel workbook, format everything, and email it out. ~6 hours every week, every week, for months. It was the team's biggest recurring time sink — and it left no time for the actual analysis the WBR was supposed to enable.
 
 ## What I Built
 An end-to-end automation platform that reduced WBR production from 6 hours to 25 minutes:

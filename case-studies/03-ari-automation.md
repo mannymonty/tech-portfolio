@@ -2,7 +2,7 @@
 *Process Automation for Finance Teams*
 
 ## The Problem
-Finance analysts spent hours every month manually filtering 200K+ invoice rows in Excel — classifying expenses across 7 categories, cleaning supplier names, splitting data for stakeholder reports. Error-prone, tedious, and repeated monthly.
+Finance analysts spent hours every month manually filtering 200K+ invoice rows in Excel — classifying expenses across 7 categories, cleaning supplier names, splitting data for stakeholder reports. Error-prone, tedious, and repeated every single month. The time cost wasn't just the hours — it was the cognitive load of doing high-stakes data work manually with no audit trail.
 
 ## What I Built
 An automated data pipeline that applies the same business rules in under 2 minutes. Iterated through 5 versions based on real user feedback:
@@ -35,4 +35,4 @@ Python 3.13, pandas, openpyxl, PySimpleGUI, PyInstaller (.exe packaging), tqdm
 - Data anomaly investigation (224K vs 9.5K rows traced to dashboard filter)
 
 ## Portfolio Angle
-I inherited a manual, error-prone Excel workflow that finance analysts spent hours on every month. I built an automated pipeline, then iterated through 5 versions based on real user feedback — from CLI to auto-discovery to a packaged desktop app that non-technical teammates run with zero setup. The evolution story is the point: I listen, I ship, I iterate.
+I inherited a manual, error-prone Excel workflow that finance analysts spent hours on every month. I built an automated pipeline that processes 200K+ rows in under 2 minutes, then iterated through 5 versions based on real user feedback — from CLI to auto-discovery to a packaged .exe that non-technical teammates run with zero setup. Each version was a direct response to a specific friction point a real user hit. The evolution story is the point: I listen, I ship, I iterate. That's the product development loop, applied to an internal tool.

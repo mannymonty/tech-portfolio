@@ -20,22 +20,22 @@ A full-stack personal finance companion — web app (Next.js, 27 pages) + mobile
 Next.js 14, React 18, React Native/Expo, TypeScript, Tailwind CSS, PostgreSQL (Supabase), Prisma ORM (38 models), Anthropic Claude, Clerk Auth, Recharts, Framer Motion, Vercel, EAS Build, Vitest + fast-check
 
 ## PMM Skills Demonstrated
-- **Product sense**: Identified a gap no one was filling — the check-in itself as the core product
-- **Customer empathy**: Built to solve my own problem, alpha tested with real users, iterated on feedback
+- **Product sense**: Identified a gap no one was filling — the check-in itself as the core product, not the data sync
+- **Customer empathy**: Built to solve my own problem first, then designed for the user who avoids their finances — not the one who's already engaged
 - **GTM strategy**: Tiered pricing (Free/Pro/Elite), competitive positioning against 6 competitors, community-driven growth thesis
 - **Messaging & positioning**: Elevator pitches at 10s/30s/2min, objection-handling scripts, "manual entry is a feature" reframe
 - **Competitive analysis**: Documented positioning against Mint, YNAB, Monarch, Copilot, Habitica, Credit Karma
+- **Technical execution**: 38-model Prisma schema, Claude AI integration at $0.01/call with DB caching, dual-client architecture (web + mobile) on a shared backend
+- **Content production**: Built a Remotion-powered explainer video using the actual Snapshot codebase — programmatic video rendered from React components, not a screen recording
 
-## Key Visuals
-> Add screenshots to `../visuals/snapshot/`
+## Explainer Video (`../visuals/snapshot/snapshot-sales.mp4`)
+A product explainer video produced with [Remotion](https://www.remotion.dev/) — a React framework for programmatic video. The video was built directly from the Snapshot codebase, meaning every animation, transition, and data visualization is driven by code rather than assembled in a traditional video editor. This is the same approach used for data-driven marketing content at scale.
 
-- Dashboard waterfall chart (cash flow visualization)
-- Player profile character sheet (level, XP, streaks, achievements)
-- Snapshot comparison view (side-by-side delta analysis)
-- Debt payoff engine (avalanche vs. snowball)
-- Mobile snapshot wizard (7-step swipe-through)
-- Promo/marketing site with pricing tiers
-- Live at: [app.takesnapshot.com](https://app.takesnapshot.com)
+This demonstrates the full PMM content loop: understand the product → define the narrative → produce the asset → ship it.
+
+## Key Visuals (`../visuals/snapshot/`)
+- `snapshot-sales.mp4` — Remotion explainer video (see above)
+- Live app: [app.takesnapshot.com](https://app.takesnapshot.com)
 
 ## Portfolio Angle
-Snapshot is a product I built from zero to alpha because I saw a gap nobody was filling. I identified the behavioral insight (manual observation changes financial behavior), validated it through my own usage and alpha testers, designed a gamification system that creates long-term engagement loops, integrated AI to deliver personalized coaching at near-zero marginal cost, and built a go-to-market strategy with tiered pricing, competitive positioning, and a community-driven growth thesis. I shipped a production web app, a mobile companion, a marketing site, and a pitch deck — all while working full-time.
+Snapshot is a product I built from zero to production because I saw a gap nobody was filling. I identified the behavioral insight (manual observation changes financial behavior), designed a gamification system that creates long-term engagement loops, integrated AI coaching at near-zero marginal cost (~$0.01/call), and built a full go-to-market strategy with tiered pricing, competitive positioning against 6 competitors, and a community-driven growth thesis. Then I produced a Remotion-powered explainer video — programmatic video built from React components using the actual codebase — to show I can close the loop from product to marketing asset. The result: a live production web app (27 pages), a mobile companion (15+ screens), a marketing site, a pitch deck, and a product video — all shipped while working full-time.
