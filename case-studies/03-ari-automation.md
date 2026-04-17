@@ -27,11 +27,7 @@ Python 3.13, pandas, openpyxl, PySimpleGUI, PyInstaller (.exe packaging), tqdm
 
 ## Key Visuals (`../visuals/ari/`)
 
-- GUI application screenshot (file browser, progress bar, live log)
-- Before/after workflow diagram (hours → 2 minutes)
-- Script evolution timeline (5 versions with user feedback drivers)
-- Multi-sheet Excel output (4-tab workbook structure)
-- Data anomaly investigation (224K vs 9.5K rows traced to dashboard filter)
+- `ARI_GUI.png` — GUI application (file browser, progress bar, live log)
 
 ## Portfolio Angle
 I inherited a manual, error-prone Excel workflow that finance analysts spent hours on every month. I built an automated pipeline that processes 200K+ rows in under 2 minutes, then iterated through 5 versions based on real user feedback — from CLI to auto-discovery to a packaged .exe that non-technical teammates run with zero setup. Each version was a direct response to a specific friction point a real user hit. The evolution story is the point: I listen, I ship, I iterate. That's the product development loop, applied to an internal tool.

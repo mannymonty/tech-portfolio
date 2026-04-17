@@ -38,7 +38,7 @@ runFolders.txt (config)          db_map.txt (per folder)
 │  • Auto-attaches all _latest.xlsx files                │
 │  • Detects files > 20MB → skips attachment             │
 │  • Sends follow-up with shared drive links instead     │
-│  • Archives to WorkDocs                                │
+│  • Archives to team document store                    │
 └──────────────────────────────────────────────────────┘
 ```
 

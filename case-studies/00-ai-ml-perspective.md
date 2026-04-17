@@ -64,4 +64,4 @@ What I bring that's harder to teach: I've worked inside the business problems th
 
 ---
 
-*See also: [Service Analytics Platform](./01-service-analytics.md) · [Snapshot AI Coach](./02-snapshot.md) · [FinAI Adoption](./06-finai-adoption.md)*
+*See also: [Service Analytics Platform](./01-service-analytics.md) · [Snapshot AI Coach](./02-snapshot.md) · [FinAI Adoption](./05-finai-adoption.md)*

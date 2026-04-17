@@ -42,13 +42,7 @@ Clickr is a tool I built in under a week because the research workflow had a gap
 ### Architecture Diagram (`../visuals/clickr/`)
 **`architecture-diagram.svg`** — Full system diagram showing the React screen flow, Firebase Firestore data model (sessions + presence collections), real-time subscription layer, and the 6-step session lifecycle from create → join → live → end → review → export.
 
-### Code (`../samples/clickr/` or link to source)
-- Full source available at [github.com/gizmonty/clickr](https://github.com/gizmonty/clickr)
+### Live App & Source
+- Live app: [clickr-two.vercel.app](https://clickr-two.vercel.app) — try it directly
+- Source: [github.com/gizmonty/clickr](https://github.com/gizmonty/clickr)
 - Key files: `src/App.jsx` (session state machine), `src/lib/sessions.js` (Firestore layer), `src/components/SessionScreen.jsx` (live tagging UI), `src/components/ReviewScreen.jsx` (transcript matching + export)
-
-### Visuals (`../visuals/clickr/`)
-- Session screen with tag buttons, live timer, and tag log
-- Review screen with transcript matched inline (highlighted rows)
-- HTML export report
-- Join flow (welcome → enter name → join code)
-- Multi-participant tag log filtered by person

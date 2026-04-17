@@ -8,7 +8,7 @@ A portfolio of cloud container services (EKS, ECS/Fargate, ECR, Lambda) generate
 A comprehensive analytics platform with three layers, each building on the last:
 
 ### Layer 1 — Customer Analytics Engine (the centerpiece)
-Full-service customer analytics notebooks for EKS, ECS/Fargate, and ECR — each a 6+ MB, 13-section analytical workbook running against Redshift. These are the most sophisticated pieces in the platform:
+Full-service customer analytics notebooks for three container and serverless compute services — each a 6+ MB, 13-section analytical workbook running against a data warehouse. These are the most sophisticated pieces in the platform:
 
 - **WBR View**: Top-N customer tables with WoW $, WoW %, YoY% (single-week and 4-week avg), and compound weekly growth rates at 5 time horizons (CWGR4/8/13/26/52). Configurable from top-10 to top-100.
 - **Customer Health Signals**: Momentum classification (Accelerating / Recovering / Decelerating / Declining), CWGR trajectory heatmaps, health quadrant scatter plots (WoW vs YoY, sized by revenue), and revenue Pareto analysis.
@@ -23,10 +23,10 @@ Full-service customer analytics notebooks for EKS, ECS/Fargate, and ECR — each
 All queries run in parallel via ThreadPoolExecutor (~5-10 min wall clock vs. ~23 min sequential). Results cached as Parquet with freshness checks.
 
 ### Layer 2 — WBR Dashboard & Revenue Reconciliation
-A self-contained executive dashboard that blends two data sources (closed-month actuals with CRF rate adjustments + open-month FDM unified revenue) to produce validated net revenue figures that match the official WBR Summary. Includes DDC rate comparison (CRF vs. FDM implied vs. WBR implied) and a two-level proportional scaling methodology for gross-to-net customer attribution.
+A self-contained executive dashboard that blends two data sources (closed-month actuals with rate adjustments + open-month unified revenue from the financial data mart) to produce validated net revenue figures that match the official WBR Summary. Includes a discount/rate comparison across the three available rate sources and a two-level proportional scaling methodology for gross-to-net customer attribution.
 
 ### Layer 3 — Auto-Generated Commentary
-Python scripts and a dedicated notebook that transform the analytical output into business-ready narrative paragraphs — the kind you paste directly into a WBR deck. Revenue trends, cohort attribution, sub-product YoY decomposition, Extended Support vs. OP2 tracking, and portfolio-level summaries.
+Python scripts and a dedicated notebook that transform the analytical output into business-ready narrative paragraphs — the kind you paste directly into a WBR deck. Revenue trends, cohort attribution, sub-product YoY decomposition, support-tier vs. legacy-program tracking, and portfolio-level summaries.
 
 ## Tech Stack
 Python, pandas, NumPy, Matplotlib, psycopg2 (Redshift), Jupyter, SQL (80+ queries across 5 Redshift clusters), ThreadPoolExecutor (parallel query execution), Parquet caching, openpyxl, holidays (actualization logic), automated email delivery
@@ -34,12 +34,12 @@ Python, pandas, NumPy, Matplotlib, psycopg2 (Redshift), Jupyter, SQL (80+ querie
 ## What This Shows
 - **Customer intelligence at scale**: Not just "who are our top customers" but "what's their momentum, where are they in their growth trajectory, what's driving their spend, and what's the risk signal" — across 7 product dimensions simultaneously
 - **Data storytelling**: Every analytical layer produces narrative output. The commentary generator, the executive summary, the per-customer deep-dives — all designed to be consumed by non-technical stakeholders
-- **Segmentation thinking**: 6-tier cohort framework, product-level decomposition (Core vs. GenAI vs. Auto Mode vs. Extended Support), pricing model mix analysis
+- **Segmentation thinking**: 6-tier cohort framework, product-level decomposition (core vs. GenAI vs. managed-mode vs. long-tail support), pricing model mix analysis
 - **Executive communication**: Health quadrant scatter plots, CWGR heatmaps, Pareto charts, momentum donut charts — visual language designed for VP/SVP audiences
-- **Systems thinking**: Parallel query execution, Parquet caching with freshness checks, actualization logic (WD7 business day calculation), fallback data sources for missing customers, validation framework cross-checking SQL output against Excel source of truth
+- **Systems thinking**: Parallel query execution, Parquet caching with freshness checks, actualization logic (configurable business-day close window), fallback data sources for missing customers, validation framework cross-checking SQL output against Excel source of truth
 
 ## Portfolio Angle
-I built the customer intelligence engine behind the weekly executive review for a multi-billion-dollar cloud services portfolio. What used to take 4–6 hours of manual work every Monday now runs in 25–30 minutes — freeing the team to spend Monday morning on analysis instead of data wrangling. The platform doesn't just query data — it classifies customer momentum, decomposes revenue drivers across product dimensions, tracks cohort migration, and generates the narrative. Each service (EKS, ECS/Fargate, ECR) has its own 13-section analytical workbook with health quadrant analysis, CWGR trajectory heatmaps, Pareto concentration charts, and auto-generated commentary. The WBR dashboard layer reconciles gross-to-net revenue across data sources, and the commentary engine produces paragraphs you paste directly into the executive deck.
+I built the customer intelligence engine behind the weekly executive review for a multi-billion-dollar cloud services portfolio. What used to take 4–6 hours of manual work every Monday now runs in 25–30 minutes — freeing the team to spend Monday morning on analysis instead of data wrangling. The platform doesn't just query data — it classifies customer momentum, decomposes revenue drivers across product dimensions, tracks cohort migration, and generates the narrative. Each of the three services covered has its own 13-section analytical workbook with health quadrant analysis, CWGR trajectory heatmaps, Pareto concentration charts, and auto-generated commentary. The WBR dashboard layer reconciles gross-to-net revenue across data sources, and the commentary engine produces paragraphs you paste directly into the executive deck.
 
 ---
 
@@ -54,9 +54,9 @@ I built the customer intelligence engine behind the weekly executive review for 
 ### Architecture (`../visuals/service-analytics/`)
 
 ```
-Redshift (5 clusters) ──→ 80+ SQL Queries (parallel) ──→ Parquet Cache
+Data Warehouse (5 clusters) ──→ 80+ SQL Queries (parallel) ──→ Parquet Cache
                                                               ↓
-Six Blockers Excel ──→ Python Loader ──→ Structured DataFrames
+Blockers Workbook ──→ Python Loader ──→ Structured DataFrames
                                                               ↓
                                     ┌─────────────────────────┼──────────────────────────┐
                                     ↓                         ↓                          ↓
@@ -64,8 +64,8 @@ Six Blockers Excel ──→ Python Loader ──→ Structured DataFrames
                           (per-service notebooks)      (revenue reconciliation)   (auto-generated narrative)
                                     ↓                         ↓                          ↓
                           • Top-N WBR tables          • Gross-to-net bridge       • WBR deck paragraphs
-                          • Health quadrant           • DDC rate validation       • Cohort attribution
-                          • CWGR heatmaps             • CRF rate comparison       • Sub-product YoY
+                          • Health quadrant           • Rate validation           • Cohort attribution
+                          • CWGR heatmaps             • Multi-source reconcile    • Sub-product YoY
                           • Cohort analysis                                       • Portfolio summary
                           • Customer deep-dives
                           • Momentum classification

@@ -2,7 +2,9 @@
 *Gamified Personal Finance App with AI Coaching*
 
 ## Live product
-[takesnapshot.com](https://takesnapshot.com) — production web app, fully functional
+- Marketing site: [takesnapshot.com](https://takesnapshot.com)
+- Production app: [app.takesnapshot.com](https://app.takesnapshot.com)
+- Live demo (no login): [app.takesnapshot.com/demo](https://app.takesnapshot.com/demo)
 
 ## The Problem
 Every personal finance app assumes the hard part is getting data (bank sync, transaction imports). The real problem is getting people to care about the data they already have. People avoid their finances, lose motivation, and never build the habit of checking in.
@@ -35,7 +37,8 @@ This demonstrates the full content production loop: understand the product → d
 
 ## Key Visuals (`../visuals/snapshot/`)
 - `snapshot-sales.mp4` — Remotion explainer video (see above)
-- Live app: [app.takesnapshot.com](https://app.takesnapshot.com)
+- Live demo (no login): [app.takesnapshot.com/demo](https://app.takesnapshot.com/demo)
+- Production app: [app.takesnapshot.com](https://app.takesnapshot.com)
 
 ## Portfolio Angle
 Snapshot is a product I built from zero to production because I saw a gap nobody was filling. I identified the behavioral insight (manual observation changes financial behavior), designed a gamification system that creates long-term engagement loops, integrated AI coaching at near-zero marginal cost (~$0.01/call), and built a full go-to-market strategy with tiered pricing, competitive positioning against 6 competitors, and a community-driven growth thesis. Then I produced a Remotion-powered explainer video — programmatic video built from React components using the actual codebase — to show I can close the loop from product to marketing asset. The result: a live production web app (27 pages), a mobile companion (15+ screens), a marketing site, a pitch deck, and a product video — all shipped while working full-time.
