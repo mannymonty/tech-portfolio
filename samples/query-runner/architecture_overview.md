@@ -1,4 +1,4 @@
-# BI Queries Automation — Architecture Overview
+# BI Queries Automation - Architecture Overview
 
 ## How It Works
 
@@ -49,7 +49,7 @@ Adding a new reporting suite requires zero code changes:
 1. Create a folder with `.sql` files
 2. Add a `db_map.txt` mapping each query to a database cluster
 3. Add the folder path to `runFolders.txt`
-4. Done — next scheduled run picks it up automatically
+4. Done. Next scheduled run picks it up automatically
 
 This is why other teams adopted it: they just add their own folders.
 
