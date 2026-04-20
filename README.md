@@ -2,7 +2,7 @@
 
 I build things that answer questions before anyone thinks to ask them, and ship them in a form that anyone on the team can actually use.
 
-This repo covers six projects across enterprise analytics, consumer fintech, process automation, operational reporting, AI enablement, and UX research tooling. Each one started with a real problem, a real user, and a gap nobody had filled. The through-line: I find where teams are losing time or missing signal, build the tool that fixes it, and make sure the output tells a clear story to whoever needs to act on it.
+This repo covers five projects across enterprise analytics, consumer fintech, process automation, operational reporting, and AI enablement. Each one started with a real problem, a real user, and a gap nobody had filled. The through-line: I find where teams are losing time or missing signal, build the tool that fixes it, and make sure the output tells a clear story to whoever needs to act on it.
 
 **A note on context.** My day job is in Finance. Everything in this repo was built in service of that work: finding where my team and org were losing time, missing signal, or underserving a stakeholder, and building the tool that closed the gap. Some of it started as "nobody asked me to do this, but it needed to exist." Some of it grew into platforms other teams across the org picked up. Snapshot is a personal project I built outside work, applying the same instinct to problems I saw in my own life and in adjacent domains. The through-line across all of it: process improvement and customer experience, closed full circle.
 
