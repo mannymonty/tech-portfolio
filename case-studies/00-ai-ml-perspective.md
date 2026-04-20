@@ -49,7 +49,7 @@ Working alongside data scientists and ML engineers at Amazon, and building my ow
 
 **Inference cost vs. latency tradeoffs.** Not all inference is equal. A real-time customer-facing prediction has different requirements than a batch job running overnight. Teams often over-provision for batch workloads or under-provision for real-time ones. I ran into this firsthand building Snapshot, caching Claude API responses at the DB level so identical financial states return cached results instead of re-invoking the model.
 
-**The "last mile" problem.** Models produce outputs. Someone has to turn those outputs into decisions, content, or actions that a business user can act on. This is where most ML value gets lost: the model works, but nobody knows what to do with it. At Amazon, my commentary generator and BI automation platform solve this for finance and business teams. In my personal projects, Snapshot's AI coach and Clickr's engagement analytics do the same: take model output and make it immediately actionable for a non-technical audience.
+**The "last mile" problem.** Models produce outputs. Someone has to turn those outputs into decisions, content, or actions that a business user can act on. This is where most ML value gets lost: the model works, but nobody knows what to do with it. At Amazon, my commentary generator and BI automation platform solve this for finance and business teams. In my personal projects, Snapshot's AI coach does the same: take model output and make it immediately actionable for a non-technical audience.
 
 ---
 
